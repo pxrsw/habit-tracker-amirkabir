@@ -1,0 +1,49 @@
+.week-list-container {
+  display: flex;
+  flex-direction: column; }
+  .week-list-container .week-item-container {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    border-radius: 10px; }
+    .week-list-container .week-item-container .title-container {
+      color: darkorange;
+      font-size: 2rem;
+      font-weight: bold;
+      font-family: Georgia, 'Times New Roman', Times, serif; }
+    .week-list-container .week-item-container .day-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around; }
+      .week-list-container .week-item-container .day-container .item-container {
+        width: 15%;
+        display: flex;
+        justify-content: center;
+        background: #fff;
+        flex-direction: column;
+        border: 1px solid #183bb1; }
+        .week-list-container .week-item-container .day-container .item-container .date-container {
+          text-align: center;
+          font-weight: bolder;
+          font-size: 2rem;
+          background: #13058d;
+          color: white; }
+        .week-list-container .week-item-container .day-container .item-container .status-container {
+          height: 100px;
+          text-align: center; }
+          .week-list-container .week-item-container .day-container .item-container .status-container .option-list {
+            display: none; }
+            .week-list-container .week-item-container .day-container .item-container .status-container .option-list li {
+              list-style: none;
+              margin-bottom: 10px; }
+              .week-list-container .week-item-container .day-container .item-container .status-container .option-list li button {
+                font-size: 2rem;
+                background-color: #03073f;
+                color: white;
+                cursor: pointer;
+                border: none;
+                outline: none;
+                padding: 5px; }
+          .week-list-container .week-item-container .day-container .item-container .status-container .status-value {
+            font-size: 3.3rem;
+            color: black; }

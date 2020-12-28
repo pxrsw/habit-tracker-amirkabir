@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="/css/habits.css">
+<section>
+    <h1>My Habits</h1>
+    <!-- delete button for selected items -->
+    <a id="delete-btn">Delete Item</a>
+</section>
+<!-- container where all habits shows -->
+<div id="habit-container">
+    <ul>
+        <%for(habit of habit_list){%>
+            <li id="item-<%=habit._id%>">
+                <div class="checkbox-container">
+                    <input type="checkbox" id="<%=habit._id%>"  class="checkbox">
+                </div>
+                <div class="habit-desc">
+                    <div class="title"><%=habit.title%></div>
+                    <div class="detail"><%=habit.details%></div>
+                </div>
+                <div class="button-container">
+                    <div class="button"><i class="fas fa-check done" id="done-<%=habit.id%>" ></i></div>
+                    <div class="button"><i class="fas fa-times not-done" id="not-done-<%=habit._id %>"></i></div>
+                    <div class="button"><i class="fas fa-minus-circle null-status" id="null-<%=habit._id %>"></i></div>
+                </div>
+            </li>
+        <%}%>
+    </ul>
+</div>
+<script src="/js/habit.js"></script>

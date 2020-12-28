@@ -1,0 +1,79 @@
+
+section{
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    position: relative;
+
+    h1{
+        font-size: 2rem;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    a{
+        padding: 5px;
+        border: none;
+        outline: none;
+        color: white;
+        background-color: dodgerblue;
+        font-size: 1.2rem;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        text-decoration: none;
+    }
+}
+#habit-container{
+    width:40rem;
+    margin:2rem  auto 2rem;
+    height: 31.6rem;
+    overflow-y: scroll;
+    
+    ul{
+        
+        li{
+            margin-bottom: 1rem;
+            color: white;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            background-color: darkblue;
+            border-radius: 10px;
+            height: 5rem;
+            justify-content: space-around;
+
+            .checkbox-container{
+                input{
+                    zoom: 1.5;
+                }
+            }
+            .habit-desc{
+                width: 65%;
+                .title{
+                    text-align: center;
+                    font-size: 1.5rem;
+                    line-height: 1.5;
+                    font-weight: bold;
+                    color: rgb(248, 147, 14);
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                }
+                .detail{
+                    font-size: 1.1rem;
+                    font-family: cursive;
+                }
+            }
+            .button-container{
+                display: flex;
+                width: 20%;
+                justify-content: space-around;
+                font-size: 1.5rem;
+                .button{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+#habit-container::-webkit-scrollbar {
+    display: none;
+  }

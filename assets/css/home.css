@@ -1,0 +1,43 @@
+main {
+  padding: 5rem 3rem;
+  position: relative; }
+
+form {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  background-color: #151515;
+  padding: 10px;
+  width: 40rem;
+  margin: auto; }
+  form #about {
+    display: flex; }
+    form #about .form-group {
+      margin: 3rem 1rem 1rem; }
+      form #about .form-group label {
+        font-size: 1.2rem;
+        display: block;
+        margin-bottom: 0.5rem; }
+      form #about .form-group input {
+        padding: 5px;
+        outline: none;
+        font-size: 1.2rem; }
+  form #commitment {
+    display: flex; }
+    form #commitment .form-group {
+      margin: 3rem 1rem 1rem; }
+      form #commitment .form-group input[type="radio"] {
+        zoom: 1.5;
+        margin-bottom: 0.5rem; }
+      form #commitment .form-group label {
+        font-size: 1.2rem;
+        display: block;
+        margin-bottom: 0.5rem; }
+  form input[type="submit"] {
+    padding: 5px;
+    width: 7rem;
+    margin: 1rem auto;
+    background-color: dodgerblue;
+    color: white;
+    outline: none;
+    border: none; }

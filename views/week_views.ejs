@@ -1,0 +1,13 @@
+<link rel="stylesheet" href="/css/weekView.css">
+<div>
+    <ul class="week-list-container">
+        <% for(habit of habits) { %> 
+            <li class="week-item-container" id="habit-<%= habit._id %>">
+                <div class="title-container"><%= habit.title %></div>
+                <div class="day-container" id="day-<%= habit._id %>">
+                </div>
+            </li>
+        <% } %>
+    </ul>
+</div>
+<script src="/js/week.js"></script>
