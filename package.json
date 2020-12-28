@@ -30,7 +30,7 @@
   "devDependencies": {
     "nodemon": "^2.0.4"
   },
-    "engines": {
+  "engines": {
     "node": "10.x"
   }
 }
